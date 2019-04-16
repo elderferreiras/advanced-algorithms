@@ -1,17 +1,22 @@
-package breadthFirstSearch;
+package vertex;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Vertex class.
+ */
 public class Vertex {
-    private int data;
+    private String data;
     private boolean visited;
+    private boolean beingVisited;
+    private List<Vertex> neighboors;
 
-    public int getData() {
+    public String getData() {
         return data;
     }
 
-    public void setData(int data) {
+    public void setData(String data) {
         this.data = data;
     }
 
@@ -23,6 +28,14 @@ public class Vertex {
         this.visited = visited;
     }
 
+    public boolean isBeingVisited() {
+        return beingVisited;
+    }
+
+    public void setBeingVisited(boolean beingVisited) {
+        this.beingVisited = beingVisited;
+    }
+
     public List<Vertex> getNeighboors() {
         return neighboors;
     }
@@ -31,9 +44,7 @@ public class Vertex {
         this.neighboors = neighboors;
     }
 
-    private List<Vertex> neighboors;
-
-    public Vertex(int data) {
+    public Vertex(String data) {
         this.data = data;
         this.neighboors = new ArrayList<Vertex>();
     }
@@ -44,7 +55,7 @@ public class Vertex {
 
     @Override
     public String toString() {
-        return Integer.toString(this.data);
+        return this.data;
     }
 }
 

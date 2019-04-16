@@ -1,6 +1,6 @@
 package depthFirstSearch;
 
-import breadthFirstSearch.Vertex;
+import vertex.Vertex;
 
 import java.util.Stack;
 

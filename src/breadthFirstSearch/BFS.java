@@ -1,5 +1,7 @@
 package breadthFirstSearch;
 
+import vertex.Vertex;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
